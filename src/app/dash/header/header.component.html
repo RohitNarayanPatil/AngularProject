@@ -1,0 +1,111 @@
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+<div class="main1" >
+  
+  <nav class=" navbar navbar-expand-lg bg-dark ">
+    <button class="btns" (click)="toggle()">
+      <h1>Patil</h1>
+    </button>
+    <a class="navbar-brand  col-sm-1 col-xl-2 bg-dark " href="#">
+    </a>
+    <div class="collapse navbar-collapse justify-content-end " id="navbarSupportedContent">
+      <ul class="navbar  pt-3 ms-1 ">
+    
+        <li class="nav-item1  ">
+          <a class="nav-link1" href="#">
+            <h3>Home</h3>
+          </a>
+        </li>
+        <li class="nav-item1">
+          <a class="nav-link1" href="#">
+            <h3>About</h3>
+          </a>
+        </li>
+        <li class="nav-item1">
+          <a class="nav-link1" href="#">
+            <h3>Logout</h3>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</div>
+
+<div class="container-fluid ">
+  <div class="row flex-nowrap">
+    <div class="col-auto col-md-2 col-xl-2 px-sm-3  bg-dark" *ngIf="display">
+      <div class="main d-flex flex-column align-items-center align-items-sm-start  px-1 pt-2 text-white min-vh-100">
+        <a class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none ">
+
+        </a>
+        <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start" id="menu">
+          <li>
+            <a data-bs-toggle="collapse" class="nav-link px-0 align-middle" routerLink="maindata">
+              <i class="bi bi-bar-chart text-white"></i><span
+                class="ms-1 d-none d-sm-inline text-white ">Dashboard</span></a>
+
+          </li>
+
+          <li>
+
+            <a data-bs-toggle="collapse" class="nav-link px-0 align-middle " routerLink="user">
+              <i class="bi bi-person text-white"></i> <span class="ms-1 d-none d-sm-inline text-white">User</span></a>
+
+          </li>
+
+          <li>
+            <a data-bs-toggle="collapse" class="nav-link px-0 align-middle " routerLink="forms">
+              <i class="bi bi-info-circle-fill text-white"></i>
+              <span class="ms-1 d-none d-sm-inline text-white">Forms</span></a>
+          </li>
+          <li>
+            <a data-bs-toggle="collapse" class="nav-link px-0 align-middle " routerLink="email">
+              <i class="bi bi-envelope text-white"></i> <span
+                class="ms-1 d-none d-sm-inline text-white">Movie List</span></a>
+          </li>
+          <li>
+            <a  data-bs-toggle="collapse" class="nav-link px-0 align-middle " routerLink="profile">
+              <i class="bi bi-people text-white"></i> <span
+                class="ms-1 d-none d-sm-inline text-white">Profile</span></a>
+          </li>
+          <li  *ngxPermissionsOnly="'DEVELOPER'">
+            <a  data-bs-toggle="collapse" class="nav-link px-0 align-middle " routerLink="setting">
+              <i class="bi bi-gear text-white"></i> <span class="ms-1 d-none d-sm-inline text-white">Setting</span></a>
+          </li> 
+          <!-- <li  *ngxPermissionsOnly="'DEVELOPER'">
+            <a  data-bs-toggle="collapse" class="nav-link px-0 align-middle " routerLink="location">
+              <i class="bi bi-geo-alt text-white"></i> <span class="ms-1 d-none d-sm-inline text-white">location</span></a>
+          </li>   -->
+          <li  *ngxPermissionsOnly="'DEVELOPER'">
+            <a  data-bs-toggle="collapse" class="nav-link px-0 align-middle " routerLink="glocation">
+              <i class="bi bi-geo-alt-fill text-white"></i> <span class="ms-1 d-none d-sm-inline text-white">glocation</span></a>
+          </li>
+
+
+        </ul>
+        <hr>
+
+      </div>
+    </div>
+    <div class="w-75" >
+    
+   <router-outlet></router-outlet>
+    </div>
+    <!-- <div class="col py-3 w-75 d-flex" *ngIf="showWelcomeMessage">
+    
+      <h1>Welcome to dashboard</h1>
+
+
+
+      <div class="d-flex align-items-start justify-content-center">
+
+
+        <div class="card  ms-4 ps-4 pt-4 align-items-center">Piechart
+          <p-chart type="pie" [data]="basicData" [options]="basicOptions"></p-chart>
+        </div>
+      </div>
+    </div> -->
+
+  </div>
+
+</div>

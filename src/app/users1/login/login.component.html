@@ -1,0 +1,32 @@
+<form [formGroup]="loginform" (ngSubmit)="loginUser()">
+<div class="main">
+    <div class="screen-1">
+      
+        <div class="Welcome">Welcome</div>
+       
+      <div class="email">
+        <div>
+         
+          <input type="text" formControlName="user"   placeholder="Username" [(ngModel)]="loginobj.username"/>
+          
+         
+        </div>
+        
+      </div>
+      <span style="color: red;" *ngIf="user && user.invalid && user.touched" >this field is required.</span>
+      <div class="password">
+        <div >
+          <input type="password" formControlName="password"  placeholder="password" [(ngModel)]="loginobj.password"/>
+        </div>
+      </div>
+      <span style="color: red;" *ngIf="password && password.invalid && password.touched" >this field is required.</span>
+      <!-- (click)="submit()" -->
+      <button type="button" class="login" (click)="onlogin()" [disabled]="loginform.invalid">Login</button>
+      <!-- <button  class="login" [disabled]="loginform.invalid">Login</button> -->
+   
+    
+        <div class="footer"><span routerLink="/users/signup">Signup</span><span>Forgot Password?</span></div>
+
+    </div>
+    </div>
+  </form>

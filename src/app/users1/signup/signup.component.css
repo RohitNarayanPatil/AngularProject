@@ -1,0 +1,25 @@
+#togglePassword{
+margin-left: 10px;
+margin-top: 3px;
+/* z-index: 1; */
+}
+
+.name-error{
+    color:red;
+    display: block;
+  }
+
+  .card-body {
+    height: 50%;
+    /* margin: 2px 6px; */
+  }
+  .test1{
+border: 2px solid rgb(128, 128, 128,0.3);
+border-radius: 10px;
+  }
+
+
+  .test3{
+ display: inline;
+ position: absolute;
+  }

@@ -18,6 +18,10 @@ import {MatInputModule} from '@angular/material/input';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatStepperModule} from '@angular/material/stepper';
 import {MatProgressBarModule} from '@angular/material/progress-bar';
+import { DropdownComponent } from './dropdown/dropdown.component';
+import {MatSelectModule} from '@angular/material/select';
+import { MatIconModule } from '@angular/material/icon';
+import { DropdownModule } from 'primeng/dropdown';
 
 @NgModule({
   declarations: [
@@ -27,6 +31,7 @@ import {MatProgressBarModule} from '@angular/material/progress-bar';
     SettingComponent,
     GlocationComponent,
     PopupComponent,
+    DropdownComponent,
  
     
   ],
@@ -39,6 +44,9 @@ import {MatProgressBarModule} from '@angular/material/progress-bar';
     MatStepperModule,
     MatFormFieldModule,
     MatInputModule,
+    MatSelectModule,
+    DropdownModule,
+    MatIconModule,
     NgxPermissionsModule.forChild({
       permissionsIsolate: true, 
       rolesIsolate: true}),

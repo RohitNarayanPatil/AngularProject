@@ -35,9 +35,7 @@ import { NgxPermissionsModule } from 'ngx-permissions';
 import { LocationComponent } from './dash/services/location/location.component';
 // import { MaindataComponent } from './dash/maindata/maindata.component';
 import {MatStepperModule} from '@angular/material/stepper';
-// import {MatInputModule} from '@angular/material/input';
-// import { AgmCoreModule } from '@agm/core';
-
+import { MatSelectModule } from '@angular/material/select';
 
 @NgModule({
   declarations: [
@@ -86,7 +84,9 @@ import {MatStepperModule} from '@angular/material/stepper';
     NgxPermissionsModule.forRoot(),
 
 MatStepperModule,
-FormsModule
+FormsModule,
+MatSelectModule,
+
  
 
   ],

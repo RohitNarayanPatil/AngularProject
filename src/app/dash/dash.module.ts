@@ -22,6 +22,8 @@ import { DropdownComponent } from './dropdown/dropdown.component';
 import {MatSelectModule} from '@angular/material/select';
 import { MatIconModule } from '@angular/material/icon';
 import { DropdownModule } from 'primeng/dropdown';
+import { FormAddComponent } from './form-add/form-add.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -32,6 +34,7 @@ import { DropdownModule } from 'primeng/dropdown';
     GlocationComponent,
     PopupComponent,
     DropdownComponent,
+    FormAddComponent,
  
     
   ],
@@ -47,6 +50,7 @@ import { DropdownModule } from 'primeng/dropdown';
     MatSelectModule,
     DropdownModule,
     MatIconModule,
+    ReactiveFormsModule,
     NgxPermissionsModule.forChild({
       permissionsIsolate: true, 
       rolesIsolate: true}),

@@ -10,6 +10,7 @@ import { SettingComponent } from './setting/setting.component';
 import { LocationComponent } from './services/location/location.component';
 import { GlocationComponent } from './services/glocation/glocation.component';
 import { DropdownComponent } from './dropdown/dropdown.component';
+import { FormAddComponent } from './form-add/form-add.component';
 
 const routes: Routes = [
   {path:'header', component:HeaderComponent,  
@@ -24,6 +25,7 @@ const routes: Routes = [
     { path: 'location', component: LocationComponent },
     { path: 'glocation', component: GlocationComponent },
     { path: 'dropdown', component: DropdownComponent },
+    { path: 'DATAD', component: FormAddComponent },
 
   ]
 },

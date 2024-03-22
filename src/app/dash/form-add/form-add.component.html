@@ -1,0 +1,59 @@
+<!-- <h1>Form</h1>
+<form [formGroup]="dataform" (ngSubmit)="add()">
+    <div class="mb-3 mt-3 pt-3 w-50">
+      <input type="text" class="form-control" placeholder="Name" formControlName="name">
+      <br>  
+      <input type="number" class="form-control" placeholder="Age" formControlName="age">
+    </div>
+    <button type="submit" class="btn btn-primary" 
+  >Add </button>
+  </form>
+
+
+  <table class="table mt-4 w-75">
+    <thead class="ms-3">
+      <tr>
+        <th>Name</th>
+        <th>Age</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let entry of data" >
+        <td>{{ entry.name }}</td>
+        <td>{{ entry.age }}</td>
+        <td>
+            <button class="btn btn-danger"
+             (click)="delete()">Delete</button></td>
+      </tr>
+    </tbody>
+  </table>
+   -->
+   <h1>Form</h1>
+<form [formGroup]="dataform" (ngSubmit)="add()">
+    <div class="mb-3 mt-3 pt-3 w-50">
+      <input type="text" class="form-control" placeholder="Name" formControlName="name">
+      <br>  
+      <input type="number" class="form-control" placeholder="Age" formControlName="age">
+    </div>
+    <button type="submit" class="btn btn-primary text-center ms-5">Add</button>
+</form>
+
+<table class="table mt-4 w-75">
+  <thead class="ms-3">
+    <tr>
+      <th>Name</th>
+      <th>Age</th>
+      <th>Action</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let entry of data; let i = index">
+      <td>{{ entry.name }}</td>
+      <td>{{ entry.age }}</td>
+      <td>
+        <button class="btn btn-danger" (click)="delete(i)">Delete</button>
+      </td>
+    </tr>
+  </tbody>
+</table>

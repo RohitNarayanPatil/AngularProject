@@ -24,7 +24,10 @@ import { MatIconModule } from '@angular/material/icon';
 import { DropdownModule } from 'primeng/dropdown';
 import { FormAddComponent } from './form-add/form-add.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { DatepickerComponent } from './datepicker/datepicker.component';
+import {MatDatepickerModule} from '@angular/material/datepicker';
 
+``
 @NgModule({
   declarations: [
     MaindataComponent,
@@ -35,6 +38,7 @@ import { ReactiveFormsModule } from '@angular/forms';
     PopupComponent,
     DropdownComponent,
     FormAddComponent,
+    DatepickerComponent,
  
     
   ],
@@ -51,10 +55,16 @@ import { ReactiveFormsModule } from '@angular/forms';
     DropdownModule,
     MatIconModule,
     ReactiveFormsModule,
+    MatDatepickerModule,
+    // provideNativeDateAdapter(undefined),
+
+
+
     NgxPermissionsModule.forChild({
       permissionsIsolate: true, 
       rolesIsolate: true}),
-   
+  
+    
       
   ]
 })

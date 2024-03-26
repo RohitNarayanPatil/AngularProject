@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { FormBuilder, FormGroup,FormControl } from '@angular/forms';
+import { FormBuilder, FormGroup,FormControl, Validators } from '@angular/forms';
 
 
 @Component({
@@ -14,7 +14,6 @@ export class FormAddComponent {
   // });
 
   // data:any[]=[]
-
   // add() {
   //   this.data.push(this.dataform.value)
   //   this.dataform.reset()
@@ -23,8 +22,8 @@ export class FormAddComponent {
   //   this.data.splice(index,1)
   // }
   dataform = new FormGroup({
-    name: new FormControl(''),
-    age: new FormControl(''),
+    name: new FormControl('',Validators.required),
+    age: new FormControl('',[Validators.required, Validators.minLength(2), Validators.maxLength(2),]),
   });
 
   data: any[] = [];
@@ -45,5 +44,11 @@ export class FormAddComponent {
   delete(index: number) {
     this.data.splice(index, 1);
     localStorage.setItem('formData', JSON.stringify(this.data));
+  }
+  limitToTwoDigits(event: any) {
+    const input = event.target;
+    if (input.value.length > 2) {
+      input.value = input.value.slice(0, 2); // Take only the first two characters
+    }
   }
 }

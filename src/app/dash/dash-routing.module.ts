@@ -11,6 +11,7 @@ import { LocationComponent } from './services/location/location.component';
 import { GlocationComponent } from './services/glocation/glocation.component';
 import { DropdownComponent } from './dropdown/dropdown.component';
 import { FormAddComponent } from './form-add/form-add.component';
+import { DatepickerComponent } from './datepicker/datepicker.component';
 
 const routes: Routes = [
   {path:'header', component:HeaderComponent,  
@@ -26,6 +27,7 @@ const routes: Routes = [
     { path: 'glocation', component: GlocationComponent },
     { path: 'dropdown', component: DropdownComponent },
     { path: 'DATAD', component: FormAddComponent },
+    { path: 'datepicker', component: DatepickerComponent },
 
   ]
 },

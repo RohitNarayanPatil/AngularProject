@@ -28,7 +28,6 @@ const routes: Routes = [
     { path: 'dropdown', component: DropdownComponent },
     { path: 'DATAD', component: FormAddComponent },
     { path: 'datepicker', component: DatepickerComponent },
-
   ]
 },
   // {path:'user', component:UserComponent},

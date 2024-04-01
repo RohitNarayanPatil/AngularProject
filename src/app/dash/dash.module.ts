@@ -26,6 +26,10 @@ import { FormAddComponent } from './form-add/form-add.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { DatepickerComponent } from './datepicker/datepicker.component';
 import {MatDatepickerModule} from '@angular/material/datepicker';
+import { ChartComponent } from './chart/chart.component';
+
+import Chart from 'chart.js/auto';
+
 
 ``
 @NgModule({
@@ -39,6 +43,7 @@ import {MatDatepickerModule} from '@angular/material/datepicker';
     DropdownComponent,
     FormAddComponent,
     DatepickerComponent,
+    ChartComponent,
  
     
   ],

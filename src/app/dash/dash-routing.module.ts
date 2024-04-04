@@ -13,6 +13,7 @@ import { DropdownComponent } from './dropdown/dropdown.component';
 import { FormAddComponent } from './form-add/form-add.component';
 import { DatepickerComponent } from './datepicker/datepicker.component';
 import { ChartComponent } from './chart/chart.component';
+import { HighComponent } from './highlight/high/high.component';
 
 const routes: Routes = [
   {path:'header', component:HeaderComponent,  
@@ -30,6 +31,8 @@ const routes: Routes = [
     { path: 'DATAD', component: FormAddComponent },
     { path: 'datepicker', component: DatepickerComponent },
     { path: 'chart', component: ChartComponent },
+    { path: 'highlight', component: HighComponent },
+  
   ]
 },
   // {path:'user', component:UserComponent},

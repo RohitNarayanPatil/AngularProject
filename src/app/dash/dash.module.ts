@@ -29,6 +29,13 @@ import {MatDatepickerModule} from '@angular/material/datepicker';
 import { ChartComponent } from './chart/chart.component';
 
 import Chart from 'chart.js/auto';
+// import { HighlightDirective } from './highlight.directive';
+import { LightDirective } from './highlight/light.directive';
+import { HighComponent } from './highlight/high/high.component';
+// import { DirectiveDirective } from './directives/directive.directive';
+// import { DirectivesComponent } from './directives/directives.component';
+// import { DirectivesDirective } from './directives.directive';
+// import { DirectDirective } from './directives/direct.directive';
 
 
 ``
@@ -44,6 +51,12 @@ import Chart from 'chart.js/auto';
     FormAddComponent,
     DatepickerComponent,
     ChartComponent,
+    // HighlightDirective,
+    LightDirective,
+    HighComponent,
+  
+ 
+
  
     
   ],

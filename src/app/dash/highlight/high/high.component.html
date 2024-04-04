@@ -1,0 +1,23 @@
+<!-- <p appLight>Highlight me!</p> -->
+
+<!-- <p [appLight]="color" defaultColor="violet">
+   Hello,
+  </p> -->
+  <div class="text-center mt-5">
+
+
+  <h1>My First Attribute Directive</h1>
+  
+  <h2>Pick a highlight color</h2>
+  <div class=" mb-3 ms-3 display-5 ">
+    <input type="radio" class="me-4 ms-2" name="colors" (click)="color='lightgreen'" style="transform: scale(2.5);    height: 29px;">Green
+    <input type="radio" class="me-4 ms-2" name="colors" (click)="color='yellow'" style="transform: scale(2.5);    height: 29px;">Yellow
+    <input type="radio" class="me-4 ms-2" name="colors" (click)="color='cyan'" style="transform: scale(2.5);     height: 29px;">Cyan
+    <input type="radio" class="me-4 ms-2" name="colors" (click)="color='green'" style="transform: scale(2.5);     height: 29px;">Green
+    <input type="radio" class="me-4 ms-2" name="colors" (click)="color='pink'" style="transform: scale(2.5);     height: 29px;">Pink
+  </div>
+ <h1>
+    <span class="m-3 display-1" [appLight]="color">Highlight me!</span>
+ </h1> 
+
+</div>

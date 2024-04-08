@@ -14,6 +14,7 @@ import { FormAddComponent } from './form-add/form-add.component';
 import { DatepickerComponent } from './datepicker/datepicker.component';
 import { ChartComponent } from './chart/chart.component';
 import { HighComponent } from './highlight/high/high.component';
+import { CsvComponent } from './csv/csv.component';
 
 const routes: Routes = [
   {path:'header', component:HeaderComponent,  
@@ -32,6 +33,7 @@ const routes: Routes = [
     { path: 'datepicker', component: DatepickerComponent },
     { path: 'chart', component: ChartComponent },
     { path: 'highlight', component: HighComponent },
+    { path: 'csv', component: CsvComponent },
   
   ]
 },

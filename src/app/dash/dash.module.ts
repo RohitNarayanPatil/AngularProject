@@ -32,6 +32,8 @@ import Chart from 'chart.js/auto';
 // import { HighlightDirective } from './highlight.directive';
 import { LightDirective } from './highlight/light.directive';
 import { HighComponent } from './highlight/high/high.component';
+import { CsvComponent } from './csv/csv.component';
+// import { CsvComponent } from './csv/csv.component';
 // import { DirectiveDirective } from './directives/directive.directive';
 // import { DirectivesComponent } from './directives/directives.component';
 // import { DirectivesDirective } from './directives.directive';
@@ -54,6 +56,7 @@ import { HighComponent } from './highlight/high/high.component';
     // HighlightDirective,
     LightDirective,
     HighComponent,
+   CsvComponent
   
  
 

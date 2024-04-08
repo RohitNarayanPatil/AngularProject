@@ -4,8 +4,6 @@ import {Directive, ElementRef, HostListener, Input} from '@angular/core';
   selector: '[appLight]'
 })
 export class LightDirective {
-  // @Input() appHighlight: string = ''; // Existing Input property
-  // @Input() defaultColor: string = ''; // New Input property
 
   constructor(private el: ElementRef) {
     // yello light permanent 

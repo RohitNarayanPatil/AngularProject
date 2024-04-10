@@ -16,6 +16,7 @@ import { ChartComponent } from './chart/chart.component';
 import { HighComponent } from './highlight/high/high.component';
 import { CsvComponent } from './csv/csv.component';
 import { TopicComponent } from './topic/topic.component';
+import { Api1Component } from './api1/api1.component';
 
 const routes: Routes = [
   {path:'header', component:HeaderComponent,  
@@ -36,6 +37,7 @@ const routes: Routes = [
     { path: 'highlight', component: HighComponent },
     { path: 'csv', component: CsvComponent },
     { path: 'svg', component: TopicComponent },
+    { path: 'api', component: Api1Component },
   
   ]
 },

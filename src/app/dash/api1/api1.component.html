@@ -1,0 +1,28 @@
+
+<h2 class="text-center ">Api get put post delete request</h2><!-- <div *ngFor="let pos of getResp">
+  <h2>{{ pos.id }}</h2>
+  <p>{{ pos.posts.body }}</p>
+</div> -->
+
+<!-- <ul>
+  <li *ngFor="let user of users.posts">
+  <th>id</th> 
+  <th>body</th> 
+  <td>{{ user.id }}</td>
+
+  <td>  {{ user.body }}</td> 
+  
+  </li>
+</ul> -->
+<div class=" pe-2 text-center">
+  <button class="btn btn-success me-2" (click)="getData()">GET Data</button>
+  <button class="btn btn-primary me-2" (click)="putData()">PUT Data</button>
+  <button class="btn btn-warning me-2"  (click)="postData()">POST Data</button>
+  <button class="btn btn-danger me-2" (click)="deleteData()">DELETE Data</button>
+</div>
+
+
+
+<div *ngIf="responseData" class="re1 mt-2">
+  <pre>{{ responseData | json }}</pre>
+</div>

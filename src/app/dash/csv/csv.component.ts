@@ -10,7 +10,7 @@ export class CsvComponent {
     // Replace this data with your own
     const data = [
       ['Name', 'Age', 'Email'],
-      ['Rohit Patil =', 25, 'Rohit@example.com'],
+      ['Rohit Patil ', 25, 'Rohit@example.com'],
       [' Adnon bhoi', 25, 'adnon@example.com'],
       [' nora', 40, 'bob@example.com']
     ];

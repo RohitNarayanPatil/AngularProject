@@ -17,6 +17,7 @@ import { HighComponent } from './highlight/high/high.component';
 import { CsvComponent } from './csv/csv.component';
 import { TopicComponent } from './topic/topic.component';
 import { Api1Component } from './api1/api1.component';
+import { TestingjsonComponent } from './testingjson/testingjson.component';
 
 const routes: Routes = [
   {path:'header', component:HeaderComponent,  
@@ -38,6 +39,7 @@ const routes: Routes = [
     { path: 'csv', component: CsvComponent },
     { path: 'svg', component: TopicComponent },
     { path: 'api', component: Api1Component },
+    { path: 'jsont', component: TestingjsonComponent },
   
   ]
 },

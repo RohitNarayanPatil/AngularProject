@@ -23,7 +23,7 @@ import {MatSelectModule} from '@angular/material/select';
 import { MatIconModule } from '@angular/material/icon';
 import { DropdownModule } from 'primeng/dropdown';
 import { FormAddComponent } from './form-add/form-add.component';
-import { ReactiveFormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { DatepickerComponent } from './datepicker/datepicker.component';
 import {MatDatepickerModule} from '@angular/material/datepicker';
 import { ChartComponent } from './chart/chart.component';
@@ -35,6 +35,7 @@ import { HighComponent } from './highlight/high/high.component';
 import { CsvComponent } from './csv/csv.component';
 import { TopicComponent } from './topic/topic.component';
 import { Api1Component } from './api1/api1.component';
+import { TestingjsonComponent } from './testingjson/testingjson.component';
 // import { CsvComponent } from './csv/csv.component';
 // import { DirectiveDirective } from './directives/directive.directive';
 // import { DirectivesComponent } from './directives/directives.component';
@@ -60,7 +61,8 @@ import { Api1Component } from './api1/api1.component';
     HighComponent,
    CsvComponent,
    TopicComponent,
-   Api1Component
+   Api1Component,
+   TestingjsonComponent
   
  
 
@@ -81,6 +83,7 @@ import { Api1Component } from './api1/api1.component';
     MatIconModule,
     ReactiveFormsModule,
     MatDatepickerModule,
+    FormsModule,
     // provideNativeDateAdapter(undefined),
 
 

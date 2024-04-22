@@ -63,12 +63,12 @@
               <i class="bi bi-envelope text-white"></i> <span
                 class="ms-1 d-none d-sm-inline text-white">Movie List</span></a>
           </li>
-          <li>
+          <li  *ngxPermissionsOnly="'DEVELOPERS'">
             <a  data-bs-toggle="collapse" class="nav-link px-0 align-middle " routerLink="profile">
               <i class="bi bi-people text-white"></i> <span
                 class="ms-1 d-none d-sm-inline text-white">Profile</span></a>
           </li>
-          <li  *ngxPermissionsOnly="'DEVELOPER'">
+          <li  *ngxPermissionsOnly="'DEVELOPERS'">
             <a  data-bs-toggle="collapse" class="nav-link px-0 align-middle " routerLink="setting">
               <i class="bi bi-gear text-white"></i> <span class="ms-1 d-none d-sm-inline text-white">Setting</span></a>
           </li> 
@@ -112,6 +112,10 @@
     <li >
             <a  data-bs-toggle="collapse" class="nav-link px-0 align-middle " routerLink="api">
               <i class="bi bi-clipboard-data"></i><span class="ms-1 d-none d-sm-inline text-white">Api</span></a>
+          </li> 
+             <li >
+            <a  data-bs-toggle="collapse" class="nav-link px-0 align-middle " routerLink="jsont">
+              <i class="bi bi-clipboard-data"></i><span class="ms-1 d-none d-sm-inline text-white">json</span></a>
           </li>
 
        

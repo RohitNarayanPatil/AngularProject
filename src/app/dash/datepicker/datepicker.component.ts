@@ -1,9 +1,6 @@
 import { Component } from '@angular/core';
 import { provideNativeDateAdapter } from '@angular/material/core';
 
-import {MatDatepickerModule} from '@angular/material/datepicker';
-import {MatFormFieldModule} from '@angular/material/form-field';
-
 @Component({
   selector: 'app-datepicker',
   templateUrl: './datepicker.component.html',
@@ -12,14 +9,23 @@ import {MatFormFieldModule} from '@angular/material/form-field';
 })
 export class DatepickerComponent {
 
-  minDate: Date;
-  maxDate: Date;
-
+  minDateS: Date;
+  maxDateS: Date;
+ 
+  minDateE: Date;
+  maxDateE: Date;
+ 
   constructor() {
-    const currentDate = new Date().getDate();
-    const currentMonth = new Date().getMonth();
+    // 1st datepicker
     const currentYear = new Date().getFullYear();
-    this.minDate = new Date(-20 , 0, 1);
-    this.maxDate = new Date(currentYear + 0 , currentMonth, currentDate);
+    const currentDate = new Date().getDate()
+    const currentMonth = new Date().getMonth()
+    this.minDateS = new Date(currentYear - 0, currentMonth-1, currentDate);
+    this.maxDateS = new Date(currentYear + 0,currentMonth,currentDate);    
+ 
+    // 2nd datepicker
+    this.minDateE = this.maxDateS;
+    this.maxDateE = new Date(currentYear + 0,currentMonth+1,currentDate);  
   }
+
 }

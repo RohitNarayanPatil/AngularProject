@@ -1,35 +1,5 @@
-<!-- <h1>Form</h1>
-<form [formGroup]="dataform" (ngSubmit)="add()">
-    <div class="mb-3 mt-3 pt-3 w-50">
-      <input type="text" class="form-control" placeholder="Name" formControlName="name">
-      <br>  
-      <input type="number" class="form-control" placeholder="Age" formControlName="age">
-    </div>
-    <button type="submit" class="btn btn-primary" 
-  >Add </button>
-  </form>
 
-
-  <table class="table mt-4 w-75">
-    <thead class="ms-3">
-      <tr>
-        <th>Name</th>
-        <th>Age</th>
-        <th>Action</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr *ngFor="let entry of data" >
-        <td>{{ entry.name }}</td>
-        <td>{{ entry.age }}</td>
-        <td>
-            <button class="btn btn-danger"
-             (click)="delete()">Delete</button></td>
-      </tr>
-    </tbody>
-  </table>
-   -->
-
+<!-- 
 <form [formGroup]="dataform" (ngSubmit)="add()">
     <div class="d-flex align-items-center justify-content-center">
         
@@ -62,4 +32,39 @@
     </tr>
   </tbody>
 </table>
+</div> -->
+<form [formGroup]="dataform" (ngSubmit)="add()">
+  <div class="d-flex align-items-center justify-content-center">
+    <div class="mb-3 mt-3 pt-3 w-50 ms-5">
+      <h1>Form</h1>
+      <input type="text" class="form-control" placeholder="Name" formControlName="name">
+      <br>  
+      <input type="number" class="form-control" placeholder="Age" formControlName="age" maxlength="2" (input)="limitToTwoDigits($event)">
+      <button type="submit" class="mt-2 btn btn-primary text-center ms-1" [disabled]="dataform.invalid">{{ editMode ? 'Update' : 'Add' }}</button>
+      <button type="button" class="mt-2 btn btn-secondary text-center ms-1" *ngIf="editMode" (click)="cancelEdit()">Cancel</button>
+    </div>
+  </div>
+</form> 
+
+<div class="card flex align-items-center ms-5">
+  <table class=" table mt-4 w-50 text-center">
+    <thead class="ms-3">
+      <tr>
+        <th>Name</th>
+        <th>Age</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let entry of data; let i = index">
+        <td>{{ entry.name }}</td>
+        <td>{{ entry.age }}</td>
+        <td>
+          <button class="btn btn-primary me-2" (click)="edit(i)">Edit</button>
+          <button class="btn btn-danger" (click)="delete(i)">Delete</button>
+      
+        </td>
+      </tr>
+    </tbody>
+  </table>
 </div>

@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, } from '@angular/common/http';
+import { Router } from '@angular/router';
 @Component({
   selector: 'app-testingjson',
   templateUrl: './testingjson.component.html',
@@ -32,12 +33,12 @@ export class TestingjsonComponent {
 //       this.get = data;
 //     });
 //   }
-name: string = "";
-email: string = "";
-number: string = "";
-responseData: any;
+public name: string = "";
+public email: string = "";
+public number: string = "";
+public responseData: any;
 
-constructor(private http: HttpClient) {
+constructor(private http: HttpClient, public router:Router) {
   // this.getData();
 }
 
@@ -70,5 +71,10 @@ postData() {
   
 }
 
-  
+// goProducts() {
+//   this.router.navigate(
+//     ['/dashboard/header/query'],
+//     { queryParams: { order: 'popular' } }
+//   );
+// }
 }

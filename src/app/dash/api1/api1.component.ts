@@ -8,8 +8,10 @@ import { HttpClient } from '@angular/common/http';
 export class Api1Component {
   // apiUrl = 'https://dummyjson.com/posts/1';
   // apiUrl = 'https://dummyjson.com/posts';
-  apiUrl = 'https://jsonplaceholder.typicode.com/posts';
-  responseData: any;
+ private apiUrl = 'https://jsonplaceholder.typicode.com/posts';
+  public responseData: any;
+  public apiError: any;
+  public statusDescription: any;
 
   constructor(private http: HttpClient) { }
 
@@ -19,6 +21,23 @@ export class Api1Component {
       this.responseData = response;
     });
   }
+// this or this
+  //   getData1() {
+  //   // GET API
+  //   this.http.get(this.apiUrl).subscribe({
+  //     next: datag => {
+  //     this.responseData = datag;
+  //   },
+  //     error:error=>{
+  //       this.statusDescription=error.message;
+  //       this.apiError=error;
+  //       console.warn('error!!', error);
+  //     }});
+  //   console.warn(this.responseData);
+  //   //  if(!this.apiResp){
+  //   //   this.statusDescription="Sorry couldn't process your GET request"
+  //   //  }
+  // }
 
   // Method to perform PUT request
   putData() {
@@ -47,4 +66,5 @@ export class Api1Component {
       this.responseData = "All data deleted";
     });
   }
+
 }

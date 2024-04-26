@@ -65,17 +65,92 @@ export class ChartComponent implements OnInit {
   //     }
   //   });
   // }
+
+
+  // constructor() { }
+  // ngOnInit(): void {
+  //   this.createChart();
+  // }
+
+
+  // createChart() {
+
+  //   this.chart = new Chart("MyChart", {
+  //     type: 'bar',
+
+  //     data: {
+  //       labels: [
+  //         'Wheat',
+  //         'Maize',
+  //         'Rice',
+  //         'Sugarcane',
+  //         'Cotton'
+  //       ],
+  //       datasets: [{
+  //         label: 'Area and Production of Important Crops (2020-21)',
+  //         // data: [9168.2, 1417.8, 3335.1, 1165.0, 2078.9],
+  //         data: [50 , 25, 10, 50,40],
+  //         backgroundColor: [
+  //           'rgb(255, 99, 132)',
+  //           'rgb(54, 162, 235)',
+  //           'rgb(255, 205, 86)',
+  //           'rgb(75, 192, 192)',
+  //           'rgb(153, 102, 255)'
+  //         ],
+  //         // hoverOffset: 4
+  //       }]
+  //     },
+  //     options: {
+  //       aspectRatio: 2.5,
+  //       plugins: {
+  //         title: {
+  //           display: true,
+  //           text: 'Area and Production of Important Crops (2020-21)',
+  //           font: {
+  //             size: 24,
+  //             weight: 'bold',
+  //             family: "'Helvetica Neue', 'Helvetica', 'Arial', sans-serif"
+  //           },
+  //           padding: {
+  //             top: 10,
+  //             bottom: 30
+  //           }
+  //         },
+  //         legend: {
+  //           display: true,
+  //           labels: {
+  //             font: {
+  //               size: 14,
+  //               family: "'Helvetica Neue', 'Helvetica', 'Arial', sans-serif"
+  //             }
+  //           }
+  //         }
+  //       }
+  //     }
+  //   });
+  // }
+ 
+  public isBarChart: boolean = true;
+
   constructor() { }
+
   ngOnInit(): void {
     this.createChart();
   }
 
+  toggleChartType() {
+    this.isBarChart = !this.isBarChart;
+    this.createChart();
+  }
 
   createChart() {
-
+    const chartType = this.isBarChart ? 'bar' : 'pie';
+    if (this.chart) {
+      this.chart.destroy();
+    }
+    
     this.chart = new Chart("MyChart", {
-      type: 'bar',
-
+      type: chartType,
       data: {
         labels: [
           'Wheat',
@@ -86,8 +161,7 @@ export class ChartComponent implements OnInit {
         ],
         datasets: [{
           label: 'Area and Production of Important Crops (2020-21)',
-          // data: [9168.2, 1417.8, 3335.1, 1165.0, 2078.9],
-          data: [50 , 25, 10, 50,40],
+          data: [80, 45, 55, 70, 90],
           backgroundColor: [
             'rgb(255, 99, 132)',
             'rgb(54, 162, 235)',
@@ -95,9 +169,9 @@ export class ChartComponent implements OnInit {
             'rgb(75, 192, 192)',
             'rgb(153, 102, 255)'
           ],
-          // hoverOffset: 4
         }]
       },
+      
       options: {
         aspectRatio: 2.5,
         plugins: {

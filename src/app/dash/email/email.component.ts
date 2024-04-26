@@ -17,10 +17,11 @@ export class EmailComponent {
 
   fetchMovies() {
     // this.http.get<any>('https://dummyapi.online/api/movies')
-    this.http.get<any[]>('https://dummyapi.online/api/movies')
+    // this.http.get<any[]>('https://dummyapi.online/api/movies')
+    this.http.get<any[]>('https://jsonplaceholder.typicode.com/posts')
       .subscribe(data => {
         // this.movies = data;
-        this.movies = data.slice(0, 100);
+        this.movies = data.slice(0, 10);
       });
       console.warn(this.movies);
      }

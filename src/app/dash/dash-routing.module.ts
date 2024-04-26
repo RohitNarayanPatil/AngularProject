@@ -18,6 +18,8 @@ import { CsvComponent } from './csv/csv.component';
 import { TopicComponent } from './topic/topic.component';
 import { Api1Component } from './api1/api1.component';
 import { TestingjsonComponent } from './testingjson/testingjson.component';
+import { QueryparamsComponent } from './queryparams/queryparams.component';
+import { ParamComponent } from './queryparams/param/param.component';
 
 const routes: Routes = [
   {path:'header', component:HeaderComponent,  
@@ -40,6 +42,8 @@ const routes: Routes = [
     { path: 'svg', component: TopicComponent },
     { path: 'api', component: Api1Component },
     { path: 'jsont', component: TestingjsonComponent },
+    { path: 'query', component: QueryparamsComponent },
+    { path: 'params', component: ParamComponent },
   
   ]
 },

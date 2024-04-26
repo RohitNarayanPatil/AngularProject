@@ -36,11 +36,14 @@ import { CsvComponent } from './csv/csv.component';
 import { TopicComponent } from './topic/topic.component';
 import { Api1Component } from './api1/api1.component';
 import { TestingjsonComponent } from './testingjson/testingjson.component';
+import { QueryparamsComponent } from './queryparams/queryparams.component';
+import { ParamComponent } from './queryparams/param/param.component';
 // import { CsvComponent } from './csv/csv.component';
 // import { DirectiveDirective } from './directives/directive.directive';
 // import { DirectivesComponent } from './directives/directives.component';
 // import { DirectivesDirective } from './directives.directive';
 // import { DirectDirective } from './directives/direct.directive';
+import {NgxTypedJsModule} from 'ngx-typed-js';
 
 
 ``
@@ -62,7 +65,9 @@ import { TestingjsonComponent } from './testingjson/testingjson.component';
    CsvComponent,
    TopicComponent,
    Api1Component,
-   TestingjsonComponent
+   TestingjsonComponent,
+   QueryparamsComponent,
+   ParamComponent
   
  
 
@@ -84,6 +89,7 @@ import { TestingjsonComponent } from './testingjson/testingjson.component';
     ReactiveFormsModule,
     MatDatepickerModule,
     FormsModule,
+    NgxTypedJsModule,
     // provideNativeDateAdapter(undefined),
 
 

@@ -20,6 +20,7 @@ import { Api1Component } from './api1/api1.component';
 import { TestingjsonComponent } from './testingjson/testingjson.component';
 import { QueryparamsComponent } from './queryparams/queryparams.component';
 import { ParamComponent } from './queryparams/param/param.component';
+import { MergeComponent } from './queryparams/merge/merge.component';
 
 const routes: Routes = [
   {path:'header', component:HeaderComponent,  
@@ -44,6 +45,7 @@ const routes: Routes = [
     { path: 'jsont', component: TestingjsonComponent },
     { path: 'query', component: QueryparamsComponent },
     { path: 'params', component: ParamComponent },
+    { path: 'merge', component: MergeComponent },
   
   ]
 },

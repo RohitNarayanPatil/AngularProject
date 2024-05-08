@@ -19,7 +19,7 @@ export class MergeComponent {
       })
 }
  goMerge() {
-    this.routing.navigate(
+    this.routing.navigate(  
       ['/dashboard/header/merge'],
       {
         queryParams: { filt: 'high-price' },

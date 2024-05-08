@@ -21,6 +21,7 @@ import { TestingjsonComponent } from './testingjson/testingjson.component';
 import { QueryparamsComponent } from './queryparams/queryparams.component';
 import { ParamComponent } from './queryparams/param/param.component';
 import { MergeComponent } from './queryparams/merge/merge.component';
+import { TestingComponent } from './testing/testing.component';
 
 const routes: Routes = [
   {path:'header', component:HeaderComponent,  
@@ -46,6 +47,7 @@ const routes: Routes = [
     { path: 'query', component: QueryparamsComponent },
     { path: 'params', component: ParamComponent },
     { path: 'merge', component: MergeComponent },
+    { path: 'testing', component: TestingComponent },
   
   ]
 },

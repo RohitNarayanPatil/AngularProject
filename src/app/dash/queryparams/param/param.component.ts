@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
-// import {NgxTypedJsModule} from ‘ngx-typed-js’;
+
 @Component({
   selector: 'app-param',
   templateUrl: './param.component.html',

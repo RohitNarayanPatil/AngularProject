@@ -45,6 +45,7 @@ import { ParamComponent } from './queryparams/param/param.component';
 // import { DirectDirective } from './directives/direct.directive';
 import {NgxTypedJsModule} from 'ngx-typed-js';
 import { MergeComponent } from './queryparams/merge/merge.component';
+import { TestingComponent } from './testing/testing.component';
 
 
 ``
@@ -69,7 +70,8 @@ import { MergeComponent } from './queryparams/merge/merge.component';
    TestingjsonComponent,
    QueryparamsComponent,
    ParamComponent,
-   MergeComponent
+   MergeComponent,
+   TestingComponent
   
  
 

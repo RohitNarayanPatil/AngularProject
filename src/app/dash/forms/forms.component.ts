@@ -14,6 +14,7 @@ import {FormBuilder, Validators, FormsModule, ReactiveFormsModule} from '@angula
 export class FormsComponent {
 
   firstFormGroup = this._formBuilder.group({
+   
     firstCtrl: ['', Validators.required],
   });
   secondFormGroup = this._formBuilder.group({

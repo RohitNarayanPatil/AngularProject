@@ -39,6 +39,7 @@ export class DropdownComponent {
  
  
   getLocation(){
+    debugger; 
     this.citycord=[this.selectedCity.longitude,this.selectedCity.latitude]
     this.centery=this.citycord
     console.warn(this.citycord);

@@ -22,6 +22,7 @@ import { QueryparamsComponent } from './queryparams/queryparams.component';
 import { ParamComponent } from './queryparams/param/param.component';
 import { MergeComponent } from './queryparams/merge/merge.component';
 import { TestingComponent } from './testing/testing.component';
+import { SpotifyComponent } from './spotify/spotify.component';
 
 const routes: Routes = [
   {path:'header', component:HeaderComponent,  
@@ -48,6 +49,7 @@ const routes: Routes = [
     { path: 'params', component: ParamComponent },
     { path: 'merge', component: MergeComponent },
     { path: 'testing', component: TestingComponent },
+    { path: 'spotify', component: SpotifyComponent },
   
   ]
 },

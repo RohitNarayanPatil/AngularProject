@@ -46,6 +46,7 @@ import { ParamComponent } from './queryparams/param/param.component';
 import {NgxTypedJsModule} from 'ngx-typed-js';
 import { MergeComponent } from './queryparams/merge/merge.component';
 import { TestingComponent } from './testing/testing.component';
+import { SpotifyComponent } from './spotify/spotify.component';
 
 
 ``
@@ -71,7 +72,8 @@ import { TestingComponent } from './testing/testing.component';
    QueryparamsComponent,
    ParamComponent,
    MergeComponent,
-   TestingComponent
+   TestingComponent,
+   SpotifyComponent
   
  
 
